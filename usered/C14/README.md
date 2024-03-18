@@ -1,4 +1,4 @@
-# Todo App using useState
+# Todo App using useReducer
  - component tree structure
   - App
    - Todo
