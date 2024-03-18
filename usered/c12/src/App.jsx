@@ -42,6 +42,10 @@ import { useReducer } from "react";
    INC Button Click --> dispatch({type:"INC_COUNT"}) --> reducer(0,{type:
     "INC_COUNT"}) --> reducer returns 1 --> 1 (whatever reducer returns) 
     becomes updated state;
+
+  --- how state update work- invoking dispatch function with action objet
+    dispatch will call reduer-->reducer will rreturn a new value-->
+    the new value become your updated state.
  */
 
 function reducer(state, action) {
