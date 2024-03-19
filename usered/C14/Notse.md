@@ -56,3 +56,14 @@ INC Button Click --> dispatch({type:"INC_COUNT"}) --> reducer(0,{type:
 This useReducer can be super helpful when you have many functions which is updating your one state value;
 7. 
 related data-- useReducer and network request example;
+8. Beneifit of using useReducer
+
+O : Orgainzation of Code
+  -Readability
+
+p : Predictibility
+  -Easy to Predict (what is the state at what point)
+
+T : Testability
+ -test cases (writing this test cases are simpler)
+
