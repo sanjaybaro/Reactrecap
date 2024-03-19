@@ -52,7 +52,7 @@ function App() {
     console.log(state);
     dispatch({ type: "RESET" });
   };
-
+  const { username, country, age } = state;
   return (
     <>
       <h3>Simple Form Management using useReducer</h3>
@@ -60,12 +60,12 @@ function App() {
       <input
         name="username"
         placeholder="Enter Username"
-        value={state.username}
+        value={username}
         onChange={handleChange}
       />
       <br />
       <hr />
-      <select name="country" value={state.country} onChange={handleChange}>
+      <select name="country" value={country} onChange={handleChange}>
         <option>Select a Country</option>
         <option value="india">India</option>
         <option value="china">China</option>
@@ -73,7 +73,7 @@ function App() {
       </select>
       <br />
       <hr />
-      <p>Age:{state.age}</p>
+      <p>Age:{age}</p>
       <button
         onClick={() => {
           dispatch({ type: "UPDATE_AGE", payload: 1 });
@@ -81,7 +81,7 @@ function App() {
       >
         INCREASE AGE
       </button>
-      <button disabled>{state.age}</button>
+      <button disabled>{age}</button>
       <button
         onClick={() => {
           dispatch({ type: "UPDATE_AGE", payload: -1 });
