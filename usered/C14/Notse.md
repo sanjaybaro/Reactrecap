@@ -52,3 +52,7 @@ INC Button Click --> dispatch({type:"INC_COUNT"}) --> reducer(0,{type:
     dispatch will call reduer-->reducer will rreturn a new value-->
     the new value become your updated state.
  
+6. How its is Helpful:
+This useReducer can be super helpful when you have many functions which is updating your one state value;
+7. 
+related data-- useReducer and network request example;
