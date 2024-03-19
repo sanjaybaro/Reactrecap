@@ -58,7 +58,7 @@ This useReducer can be super helpful when you have many functions which is updat
 related data-- useReducer and network request example;
 8. Beneifit of using useReducer
 
-O : Orgainzation of Code
+O : Orgainzation of Code (especially when the state is complex)
   -Readability
 
 p : Predictibility
