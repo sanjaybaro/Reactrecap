@@ -52,7 +52,11 @@ function App() {
     console.log(state);
     dispatch({ type: "RESET" });
   };
+
+//Destructuring state object 
   const { username, country, age } = state;
+  
+  
   return (
     <>
       <h3>Simple Form Management using useReducer</h3>
